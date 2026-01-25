@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Xiao Shen Ye - Home</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8B4513", "primary-hover": "#6e360e", "background-light": "#FFF8F0", "background-dark": "#1a1614", "accent-gold": "#C5A059", "surface-light": "#FFFFFF", "surface-dark": "#2a2422", "text-main-light": "#4A3B32", "text-main-dark": "#E6DED8", "text-muted-light": "#7D6E66", "text-muted-dark": "#A89F99",
+            },
+            fontFamily: { display: ["'Noto Serif TC'", "serif"], sans: ["'Noto Sans TC'", "sans-serif"], },
+            borderRadius: { DEFAULT: "0.5rem", "xl": "1rem", "2xl": "1.5rem", },
+            animation: { 'spin-slow': 'spin 20s linear infinite', }
+          },
+        },
+      };
+    </script>
+<style> .text-vertical { writing-mode: vertical-rl; text-orientation: upright; } ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: transparent;  } ::-webkit-scrollbar-thumb { background: #C5A059;  border-radius: 4px; } ::-webkit-scrollbar-thumb:hover { background: #8B4513;  } </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-text-main-light dark:text-text-main-dark antialiased transition-colors duration-300">
+
+<nav class="fixed w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-stone-200 dark:border-stone-800 transition-colors duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+<div class="flex-shrink-0 flex items-center gap-3">
+<a href="index.html" class="flex items-center gap-3">
+    <img alt="Xiao Shen Ye Logo" class="h-16 w-16 rounded-full object-cover object-top border-2 border-primary" src="logo-character.jpg"/>
+    <span class="font-display font-bold text-2xl text-primary tracking-widest hidden md:block">小沈爺</span>
+</a>
+</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-display text-text-main-light dark:text-text-main-dark hover:text-primary dark:hover:text-accent-gold transition-colors font-medium" href="about.html">關於品牌</a>
+<a class="font-display text-text-main-light dark:text-text-main-dark hover:text-primary dark:hover:text-accent-gold transition-colors font-medium" href="about.html#chef-bio">主廚經歷</a>
+<a class="font-display text-text-main-light dark:text-text-main-dark hover:text-primary dark:hover:text-accent-gold transition-colors font-medium" href="products.html">嚴選商品</a>
+<a class="font-display text-text-main-light dark:text-text-main-dark hover:text-primary dark:hover:text-accent-gold transition-colors font-medium" href="contact.html">聯絡我們</a>
+<a href="store.html" class="bg-primary hover:bg-primary-hover text-white px-6 py-2 rounded-full font-medium transition-transform transform hover:scale-105 shadow-md flex items-center gap-2">
+<span class="material-icons-outlined text-sm">storefront</span>
+                    線上購物
+                </a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-text-main-light dark:text-text-main-dark hover:text-primary p-2">
+<span class="material-icons-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+
+<header class="relative pt-20 h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXiPUcoVOUm-WMGbCQU_cmo1Yuesr4m6JdToQzJfpqyURjY2AQ3JGDuGBEgd3lJ2DA-yfLT1QIxORcpkstNSCaiAq7tu15C3PPQwc76nvE8g1y_vgp_bN_cb_mrwzeUTMvWmTbZbmNJgQEvFOgSXKQt6GjVG-R1EVw30jhnH2hDIaOHSNtRvu1m1IxSAl5fNwKV81yCbmbMsDhJjIALCk8mbd2PDc8KlzMruafT2FnImPhKEfrKbiK3bycawnxfVVPwOrNkFRzJYA"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background-light/90 via-background-light/80 to-transparent dark:from-background-dark/95 dark:via-background-dark/80 dark:to-transparent/20"></div>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center text-center">
+    
+    <div class="inline-block bg-accent-gold/20 dark:bg-accent-gold/10 text-primary dark:text-accent-gold px-6 py-2 rounded-full text-sm font-bold tracking-wider mb-6 border border-accent-gold/30 animate-fade-in-up">
+        法國藍帶主廚 • 傳承古法
+    </div>
+
+    <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-black text-text-main-light dark:text-white leading-tight mb-8 drop-shadow-sm">
+        老圓環記憶<br/>
+        <span class="text-primary dark:text-accent-gold">新食代</span>風味
+    </h1>
+
+    <p class="text-lg md:text-2xl text-text-muted-light dark:text-gray-300 max-w-2xl mx-auto font-light leading-relaxed mb-10">
+        擁有台式的經典與法國藍帶的精緻，創造不一樣的調理食品王國。<br class="hidden md:block" />小沈爺，跟您一輩子的好味道。
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-6 justify-center w-full sm:w-auto">
+        <a href="products.html" class="bg-primary hover:bg-primary-hover text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 transform hover:-translate-y-1">
+            探索美味
+            <span class="material-icons-outlined">arrow_forward</span>
+        </a>
+        <a href="about.html" class="bg-white/80 dark:bg-surface-dark/80 backdrop-blur text-text-main-light dark:text-white border border-stone-200 dark:border-stone-700 hover:border-primary dark:hover:border-accent-gold px-10 py-4 rounded-full font-bold text-lg shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1">
+            品牌故事
+        </a>
+    </div>
+
+</div>
+</header>
+
+<footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800 text-center">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-3">
+    <img alt="Xiao Shen Ye Logo Footer" class="h-10 w-10 rounded-full object-cover object-top border-2 border-primary" src="logo-character.jpg"/>
+    <span class="font-display font-bold text-white text-lg">小沈爺</span>
+</div>
+<p class="text-sm">© 2023 Xiao Shen Ye. All rights reserved.</p>
+<div class="flex gap-4">
+<a href="#" class="hover:text-primary transition-colors">FB</a>
+<a href="#" class="hover:text-primary transition-colors">IG</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

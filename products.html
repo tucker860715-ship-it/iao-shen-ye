@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>嚴選商品 - 小沈爺</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+  tailwind.config = { darkMode: "class", theme: { extend: { colors: { primary: "#8B4513", "primary-hover": "#6e360e", "background-light": "#FFF8F0", "background-dark": "#1a1614", "accent-gold": "#C5A059", "surface-light": "#FFFFFF", "surface-dark": "#2a2422", "text-main-light": "#4A3B32", "text-main-dark": "#E6DED8", "text-muted-light": "#7D6E66", "text-muted-dark": "#A89F99", }, fontFamily: { display: ["'Noto Serif TC'", "serif"], sans: ["'Noto Sans TC'", "sans-serif"], }, borderRadius: { DEFAULT: "0.5rem", "xl": "1rem", "2xl": "1.5rem", }, } }, };
+</script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-text-main-light dark:text-text-main-dark antialiased transition-colors duration-300">
+
+<nav class="fixed w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-stone-200 dark:border-stone-800 transition-colors duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-20 items-center">
+      <div class="flex-shrink-0 flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3">
+            <img alt="Xiao Shen Ye Logo" class="h-16 w-16 rounded-full object-cover object-top border-2 border-primary" src="logo-character.jpg"/>
+            <span class="font-display font-bold text-2xl text-primary tracking-widest hidden md:block">小沈爺</span>
+        </a>
+      </div>
+      <div class="hidden md:flex space-x-8 items-center">
+        <a class="font-display text-text-main-light dark:text-text-main-dark hover:text-primary dark:hover:text-accent-gold transition-colors font-medium" href="about.html">關於品牌</a>
+        <a class="font-display text-text-main-light dark:text-text-main-dark hover:text-primary dark:hover:text-accent-gold transition-colors font-medium" href="about.html#chef-bio">主廚經歷</a>
+        <a class="font-display text-primary dark:text-accent-gold font-bold transition-colors" href="products.html">嚴選商品</a>
+        <a class="font-display text-text-main-light dark:text-text-main-dark hover:text-primary dark:hover:text-accent-gold transition-colors font-medium" href="contact.html">聯絡我們</a>
+        <a href="store.html" class="bg-primary hover:bg-primary-hover text-white px-6 py-2 rounded-full font-medium transition-transform transform hover:scale-105 shadow-md flex items-center gap-2">
+            <span class="material-icons-outlined text-sm">storefront</span> 線上購物
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="pt-32 pb-12 bg-stone-100 dark:bg-stone-900 text-center">
+    <h1 class="text-4xl font-display font-bold text-primary dark:text-accent-gold">主廚推薦</h1>
+    <p class="mt-4 text-text-muted-light dark:text-text-muted-dark">嚴選頂級食材，注入藍帶靈魂</p>
+</div>
+
+<section class="py-24 bg-white dark:bg-surface-dark relative" id="product-showcase">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-32">
+      <div class="lg:w-1/2 relative group perspective-1000">
+        <div class="relative rounded-xl overflow-hidden shadow-2xl h-[400px] w-full">
+            <img alt="Signature Braised Pork" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvA2w-CknkE5d7p-9RLxClcHuHP7gMh6cyBtQi0-yHRQ4Rc7MsZEB6ZwNo3W485SYoIowt8Uey6XVPwyYGdY7uLIVM7qQI1B95dxzKbqb3StYKjXwHrJnlHrQwiQXe5RE8p-HG9DEmgK1aqW91qgnaOaODHrO4kbvCngbmmb1-bR2ZONs00HcddHIVI0MEV8Oo6RzQwk_t-B0-wRYRuCQwEJ2BWwprZ56qbW2k6nkcdlJNpEuKtjK9ajA-MbMD_s4EROwfK-wKob4"/>
+        </div>
+      </div>
+      <div class="lg:w-1/2 space-y-8">
+        <h3 class="text-3xl md:text-4xl font-display font-bold text-text-main-light dark:text-white mb-2">古早味滷肉調理包</h3>
+        <p class="text-text-muted-light dark:text-text-muted-dark leading-loose text-lg">嚴選台灣在地黑毛豬五花肉，堅持手工切塊保留口感。加入獨門秘製醬油與冰糖，慢火熬煮72小時。</p>
+        <div class="pt-4"><a href="store.html" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-bold shadow-lg">前往選購</a></div>
+      </div>
+    </div>
+    <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20 mb-32">
+      <div class="lg:w-1/2 relative">
+        <div class="relative rounded-xl overflow-hidden shadow-2xl h-[400px] w-full">
+            <img alt="French Style Beef Noodles" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuVj15384Zn6gVWKITG6mweKAViOO6O3imXWpy45zTtaZ05eRAlvEcOch6U-eYD50S95YLdmnQpmUdAtvTYwIm9wwIn33lBB2rg5-256sYrDRh_O9e0AOt-kSSR_jzj437B7tBpze8XzjRHPVCCYBOagycH5jXK3lVly8u6WJjqhReT75TyeudUavMQvan1q22h2bI03WihI1A0LAVwJlQS-Ne1W_QONVCFK66ATwAvfY-aIOCEO-P5VU4aIOsql8tJT-MdGYKukc"/>
+        </div>
+      </div>
+      <div class="lg:w-1/2 space-y-8">
+        <h3 class="text-3xl md:text-4xl font-display font-bold text-text-main-light dark:text-white mb-2">法式紅酒燉牛肉麵</h3>
+        <p class="text-text-muted-light dark:text-text-muted-dark leading-loose text-lg">顛覆傳統牛肉麵印象，將法式紅酒燉牛肉技法融入台式湯頭。選用頂級牛腱心，先煎後燉鎖住肉汁。</p>
+        <div class="pt-4"><a href="store.html" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-bold shadow-lg">前往選購</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800 text-center">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+          <img alt="Xiao Shen Ye Logo Footer" class="h-10 w-10 rounded-full object-cover object-top border-2 border-primary" src="logo-character.jpg"/>
+          <span class="font-display font-bold text-white text-lg">小沈爺</span>
+      </div>
+      <p class="text-sm">© 2023 Xiao Shen Ye. All rights reserved.</p>
+      <div class="flex gap-4"><a href="#" class="hover:text-primary transition-colors">FB</a><a href="#" class="hover:text-primary transition-colors">IG</a></div>
+    </div>
+  </div>
+</footer>
+</body></html>
