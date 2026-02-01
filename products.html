@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh-TW"><head>
+<html lang="zh-TW">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>嚴選商品 - 小沈爺</title>
@@ -12,10 +13,10 @@
   tailwind.config = { darkMode: "class", theme: { extend: { colors: { primary: "#8B4513", "primary-hover": "#6e360e", "background-light": "#FFF8F0", "background-dark": "#1a1614", "accent-gold": "#C5A059", "surface-light": "#FFFFFF", "surface-dark": "#2a2422", "text-main-light": "#4A3B32", "text-main-dark": "#E6DED8", "text-muted-light": "#7D6E66", "text-muted-dark": "#A89F99", }, fontFamily: { display: ["'Noto Serif TC'", "serif"], sans: ["'Noto Sans TC'", "sans-serif"], }, borderRadius: { DEFAULT: "0.5rem", "xl": "1rem", "2xl": "1.5rem", }, } }, };
 </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-sans text-text-main-light dark:text-text-main-dark antialiased transition-colors duration-300">
+<body class="bg-background-light dark:bg-background-dark font-sans text-text-main-light dark:text-text-main-dark antialiased transition-colors duration-300 flex flex-col min-h-screen">
 
 <nav class="fixed w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-stone-200 dark:border-stone-800 transition-colors duration-300">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="w-full px-6 lg:px-12">
     <div class="flex justify-between h-20 items-center">
       <div class="flex-shrink-0 flex items-center gap-3">
         <a href="index.html" class="flex items-center gap-3">
@@ -28,12 +29,27 @@
         <a class="font-display text-text-main-light dark:text-text-main-dark hover:text-primary dark:hover:text-accent-gold transition-colors font-medium" href="about.html#chef-bio">主廚經歷</a>
         <a class="font-display text-primary dark:text-accent-gold font-bold transition-colors" href="products.html">嚴選商品</a>
         <a class="font-display text-text-main-light dark:text-text-main-dark hover:text-primary dark:hover:text-accent-gold transition-colors font-medium" href="contact.html">聯絡我們</a>
-        <a href="store.html" class="bg-primary hover:bg-primary-hover text-white px-6 py-2 rounded-full font-medium transition-transform transform hover:scale-105 shadow-md flex items-center gap-2">
-            <span class="material-icons-outlined text-sm">storefront</span> 線上購物
-        </a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-btn" class="text-text-main-light dark:text-text-main-dark hover:text-primary p-2 focus:outline-none">
+          <span class="material-icons-outlined text-3xl">menu</span>
+        </button>
       </div>
     </div>
   </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-stone-900 border-t border-stone-200 dark:border-stone-800 absolute w-full left-0 top-20 shadow-xl">
+    <div class="px-6 pt-4 pb-8 space-y-4 flex flex-col">
+      <a class="block text-lg font-bold text-text-main-light dark:text-white hover:text-primary py-2 border-b border-stone-100 dark:border-stone-800" href="about.html">關於品牌</a>
+      <a class="block text-lg font-bold text-text-main-light dark:text-white hover:text-primary py-2 border-b border-stone-100 dark:border-stone-800" href="about.html#chef-bio">主廚經歷</a>
+      <a class="block text-lg font-bold text-text-main-light dark:text-white hover:text-primary py-2 border-b border-stone-100 dark:border-stone-800" href="products.html">嚴選商品</a>
+      <a class="block text-lg font-bold text-text-main-light dark:text-white hover:text-primary py-2" href="contact.html">聯絡我們</a>
+    </div>
+  </div>
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+  </script>
 </nav>
 
 <div class="pt-32 pb-12 bg-stone-100 dark:bg-stone-900 text-center">
@@ -41,36 +57,19 @@
     <p class="mt-4 text-text-muted-light dark:text-text-muted-dark">嚴選頂級食材，注入藍帶靈魂</p>
 </div>
 
-<section class="py-24 bg-white dark:bg-surface-dark relative" id="product-showcase">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-32">
-      <div class="lg:w-1/2 relative group perspective-1000">
-        <div class="relative rounded-xl overflow-hidden shadow-2xl h-[400px] w-full">
-            <img alt="Signature Braised Pork" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvA2w-CknkE5d7p-9RLxClcHuHP7gMh6cyBtQi0-yHRQ4Rc7MsZEB6ZwNo3W485SYoIowt8Uey6XVPwyYGdY7uLIVM7qQI1B95dxzKbqb3StYKjXwHrJnlHrQwiQXe5RE8p-HG9DEmgK1aqW91qgnaOaODHrO4kbvCngbmmb1-bR2ZONs00HcddHIVI0MEV8Oo6RzQwk_t-B0-wRYRuCQwEJ2BWwprZ56qbW2k6nkcdlJNpEuKtjK9ajA-MbMD_s4EROwfK-wKob4"/>
-        </div>
-      </div>
-      <div class="lg:w-1/2 space-y-8">
-        <h3 class="text-3xl md:text-4xl font-display font-bold text-text-main-light dark:text-white mb-2">古早味滷肉調理包</h3>
-        <p class="text-text-muted-light dark:text-text-muted-dark leading-loose text-lg">嚴選台灣在地黑毛豬五花肉，堅持手工切塊保留口感。加入獨門秘製醬油與冰糖，慢火熬煮72小時。</p>
-        <div class="pt-4"><a href="store.html" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-bold shadow-lg">前往選購</a></div>
-      </div>
-    </div>
-    <div class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20 mb-32">
-      <div class="lg:w-1/2 relative">
-        <div class="relative rounded-xl overflow-hidden shadow-2xl h-[400px] w-full">
-            <img alt="French Style Beef Noodles" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuVj15384Zn6gVWKITG6mweKAViOO6O3imXWpy45zTtaZ05eRAlvEcOch6U-eYD50S95YLdmnQpmUdAtvTYwIm9wwIn33lBB2rg5-256sYrDRh_O9e0AOt-kSSR_jzj437B7tBpze8XzjRHPVCCYBOagycH5jXK3lVly8u6WJjqhReT75TyeudUavMQvan1q22h2bI03WihI1A0LAVwJlQS-Ne1W_QONVCFK66ATwAvfY-aIOCEO-P5VU4aIOsql8tJT-MdGYKukc"/>
-        </div>
-      </div>
-      <div class="lg:w-1/2 space-y-8">
-        <h3 class="text-3xl md:text-4xl font-display font-bold text-text-main-light dark:text-white mb-2">法式紅酒燉牛肉麵</h3>
-        <p class="text-text-muted-light dark:text-text-muted-dark leading-loose text-lg">顛覆傳統牛肉麵印象，將法式紅酒燉牛肉技法融入台式湯頭。選用頂級牛腱心，先煎後燉鎖住肉汁。</p>
-        <div class="pt-4"><a href="store.html" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-bold shadow-lg">前往選購</a></div>
-      </div>
+<section class="py-24 bg-white dark:bg-surface-dark relative flex-grow" id="product-showcase">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" id="products-container">
+    <div id="loading-text" class="text-center py-20">
+        <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary mb-4"></div>
+        <p class="text-xl text-stone-500">
+            正在連線到伺服器讀取產品...<br>
+            <span class="text-sm">(請確認終端機已輸入 node server.js)</span>
+        </p>
     </div>
   </div>
 </section>
 
-<footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800 text-center">
+<footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800 text-center mt-auto">
   <div class="max-w-7xl mx-auto px-4">
     <div class="flex flex-col md:flex-row justify-between items-center gap-4">
       <div class="flex items-center gap-3">
@@ -82,4 +81,76 @@
     </div>
   </div>
 </footer>
-</body></html>
+
+<script>
+    const container = document.getElementById('products-container');
+    const loadingText = document.getElementById('loading-text');
+
+    fetch('http://localhost:3000/api/products')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('伺服器回應錯誤');
+            }
+            return response.json();
+        })
+        .then(products => {
+            loadingText.style.display = 'none';
+
+            if (products.length === 0) {
+                container.innerHTML = `
+                    <div class="flex flex-col items-center justify-center h-full py-20 text-stone-400">
+                        <span class="material-icons-outlined text-6xl mb-4">inventory_2</span>
+                        <p class="text-xl">目前沒有上架的產品</p>
+                        <p class="text-sm mt-2">請至後台 (admin.html) 新增您的第一項商品</p>
+                    </div>`;
+                return;
+            }
+
+            products.forEach((product, index) => {
+                const isEven = index % 2 !== 0;
+                const flexDirection = isEven ? 'lg:flex-row-reverse' : 'lg:flex-row';
+                const imgSrc = product.image ? product.image : 'logo-character.jpg';
+
+                const html = `
+                <div class="flex flex-col ${flexDirection} items-center gap-12 lg:gap-20 mb-32 animate-fade-in-up">
+                    <div class="lg:w-1/2 relative group perspective-1000">
+                        <div class="relative rounded-xl overflow-hidden shadow-2xl h-[400px] w-full border border-stone-200 dark:border-stone-700">
+                            <img alt="${product.name}" class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105" src="${imgSrc}"/>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 space-y-8">
+                        <h3 class="text-3xl md:text-4xl font-display font-bold text-text-main-light dark:text-white mb-2">
+                            ${product.name}
+                        </h3>
+                        <p class="text-text-muted-light dark:text-text-muted-dark leading-loose text-lg">
+                            ${product.description}
+                        </p>
+                        <div class="pt-6 flex flex-col sm:flex-row gap-4">
+                            ${product.shopeeLink ? `
+                            <a href="${product.shopeeLink}" target="_blank" class="flex-1 bg-[#ee4d2d] hover:bg-[#d03416] text-white py-3 rounded-full text-center font-bold shadow-md flex items-center justify-center gap-2 transition-transform hover:-translate-y-1">
+                                <span class="material-icons-outlined text-sm">shopping_bag</span> 蝦皮購物
+                            </a>` : ''}
+                            ${product.momoLink ? `
+                            <a href="${product.momoLink}" target="_blank" class="flex-1 bg-[#d61d6e] hover:bg-[#b01358] text-white py-3 rounded-full text-center font-bold shadow-md flex items-center justify-center gap-2 transition-transform hover:-translate-y-1">
+                                <span class="material-icons-outlined text-sm">local_mall</span> Momo購物
+                            </a>` : ''}
+                        </div>
+                    </div>
+                </div>
+                `;
+                container.innerHTML += html;
+            });
+        })
+        .catch(err => {
+            console.error('抓取失敗:', err);
+            loadingText.innerHTML = `
+                <div class="text-red-500 font-bold text-xl mb-2">無法連接伺服器 (Connection Error)</div>
+                <div class="text-stone-500">
+                    1. 請確認終端機已輸入 <code class="bg-gray-200 px-1 rounded text-black">node server.js</code><br>
+                    2. 請確認網址列是 http://localhost
+                </div>
+            `;
+        });
+</script>
+</body>
+</html>
